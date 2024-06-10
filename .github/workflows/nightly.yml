@@ -27,7 +27,7 @@ jobs:
 
       - name: Cancel action if no new commits
         if: ${{ steps.check-new-commits.outputs.has-new-commits != 'true' }}
-        uses: andymckay/cancel-action@0.3
+        uses: andymckay/cancel-action@0.4
 
       - name: Wait for cancellation
         if: ${{ steps.check-new-commits.outputs.has-new-commits != 'true' }}
